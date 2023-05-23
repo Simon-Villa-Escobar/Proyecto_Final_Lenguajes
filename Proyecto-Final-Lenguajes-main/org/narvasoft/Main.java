@@ -39,7 +39,7 @@ public class Main {
             switch (opcion) {
                 case "1":
                     linea = "GET http://example.com/api/users HTTP/1.1\r\n";
-                    cabecera = "Content-Type: application/json\r\nAuthorization-Bearer: abc123\r\n";
+                    cabecera = "Content-Type: archivo/json\r\nAuthorization-Bearer: abc123\r\n";
                     body = "";
 
                     parser.ApiRest(linea, cabecera, body, 0);
@@ -49,7 +49,7 @@ public class Main {
                     id = scannerId.nextInt();
 
                     linea = "GET http://example.com/api/users HTTP/1.1\r\n";
-                    cabecera = "Content-Type: application/json\r\nAuthorization-Bearer: abc123\r\n";
+                    cabecera = "Content-Type: archivo/json\r\nAuthorization-Bearer: abc123\r\n";
                     body = "";
 
                     parser.ApiRest(linea, cabecera, body, id);
@@ -65,7 +65,7 @@ public class Main {
                     telefono = scanner.nextLine();
 
                     linea = "POST http://example.com/api/users HTTP/1.1\r\n";
-                    cabecera = "Content-Type: application/json\r\nAuthorization-Bearer: abc123\r\n";
+                    cabecera = "Content-Type: archivo/json\r\nAuthorization-Bearer: abc123\r\n";
                     body = "{\"nombres\": \"" + nombre + "\", \"email\": \"" + correo + "\", \"phone\": \"" + telefono + "\"}\r\n";
 
                     parser.ApiRest(linea, cabecera, body, 0);
@@ -84,7 +84,7 @@ public class Main {
                     telefono = scanner.nextLine();
 
                     linea = "PUT http://example.com/api/users HTTP/1.1\r\n";
-                    cabecera = "Content-Type: application/json\r\nAuthorization-Bearer: abc123\r\n";
+                    cabecera = "Content-Type: archivo/json\r\nAuthorization-Bearer: abc123\r\n";
                     body = "{\"nombres\": \"" + nombre + "\", \"email\": \"" + correo + "\", \"phone\": \"" + telefono + "\"}\r\n";
 
                     parser.ApiRest(linea, cabecera, body, id);
@@ -94,7 +94,7 @@ public class Main {
                     id = scannerId.nextInt();
 
                     linea = "DELETE http://example.com/api/users HTTP/1.1\r\n";
-                    cabecera = "Content-Type: application/json\r\nAuthorization-Bearer: abc123\r\n";
+                    cabecera = "Content-Type: archivo/json\r\nAuthorization-Bearer: abc123\r\n";
                     body = "";
 
                     parser.ApiRest(linea, cabecera, body, id);
