@@ -6,7 +6,7 @@ import java.util.regex.Pattern;
 import java.util.Map;
 import java.util.HashMap;
 
-public class SyntaxParser {    
+public class Json {    
     private static final String METODO = "(OPTIONS|GET|HEAD|POST|PUT|DELETE|TRACE|CONNECT)";
     private static final String ESQ = "(http|https)";
     private static final String HOST = "([A-Za-z0-9_+-./:=?&%;]+)+";
